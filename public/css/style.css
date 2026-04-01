@@ -181,6 +181,10 @@ ul {
   left: 0;
 }
 
+.kv.pathway .kv-text {
+  width: 80%;
+}
+
 @media screen and (max-width: 991px) {
   .kv {
     padding: 40px 0;
@@ -505,5 +509,40 @@ ul {
 .beauty-title {
   width: 81%;
   margin: 0 auto;
+}
+
+.shatter {
+  position: relative;
+}
+
+.shatter-title {
+  width: 39%;
+}
+
+.shatter_content {
+  padding: 24px 68px 0;
+}
+
+.shatter-sgs {
+  width: 34%;
+}
+
+.shatter-product {
+  width: 51%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.beautify-title {
+  width: 81%;
+  margin: 0 auto;
+}
+
+.beautify hr {
+  margin: 0;
+  border-width: 11px;
+  border-color: #85a29f;
 }
 /*# sourceMappingURL=style.css.map */

@@ -164,6 +164,11 @@ ul {
       }
     }
   }
+  &.pathway {
+    .kv-text {
+      width: 80%;
+    }
+  }
   @media screen and (max-width: 991px) {
     padding: 40px 0;
     &-text {
@@ -459,5 +464,37 @@ ul {
   &-title {
     width: 81%;
     margin: 0 auto;
+  }
+}
+
+.shatter {
+  position: relative;
+  &-title {
+    width: 39%;
+  }
+  &_content {
+    padding: 24px 68px 0;
+  }
+  &-sgs {
+    width: 34%;
+  }
+  &-product {
+    width: 51%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+.beautify {
+  &-title {
+    width: 81%;
+    margin: 0 auto;
+  }
+  hr {
+    margin: 0;
+    border-width: 11px;
+    border-color: #85a29f;
   }
 }
