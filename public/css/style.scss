@@ -1,0 +1,463 @@
+$white: #fff;
+$transition: 0.3s;
+$primary: #355c5a;
+$secondary: #e7932e;
+$text: #000;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: none;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+button {
+  transition: $transition;
+}
+
+select {
+  appearance: none;
+  background-image: url(../img/select-arrow.svg);
+  background-size: 18px;
+  background-position: calc(100% - 14px) center;
+  background-repeat: no-repeat;
+}
+
+main {
+  overflow: hidden;
+  min-height: calc(100vh - 55px);
+    padding-top: 55px;
+  @media screen and (max-width: 767px) {
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+//   display: block;
+  transition: $transition;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: $secondary;
+    [class^="icon-"],
+    [class*=" icon-"] {
+      &::before {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kv {
+  position: relative;
+  padding: 100px 0;
+  &-tag {
+    position: absolute;
+    width: 10%;
+    right: 10px;
+    top: 5%;
+  }
+  &-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container {
+    > .row {
+      margin-left: -25px;
+      margin-right: -25px;
+      align-items: center;
+      > div {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+  &_pic {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  &_side {
+    width: 60%;
+    overflow: hidden;
+    .swiper-slide {
+      height: auto !important;
+      cursor: pointer;
+    }
+    &-wrap {
+      position: relative;
+      .swiper-button {
+        &-prev,
+        &-next {
+          top: 50%;
+          transform: translateY(-50%);
+          position: absolute;
+          margin: 0;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+    &_item {
+      position: relative;
+      width: 100%;
+      padding-bottom: 67%;
+      > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &_swiper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    &_item {
+      position: relative;
+      width: 100%;
+      padding-bottom: 67%;
+      > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 40px 0;
+    &-text {
+      margin-top: 40px;
+      width: 100%;
+    }
+    &-tag {
+      width: 20%;
+      right: 20px;
+      z-index: 5;
+      top: 40px;
+    }
+  }
+}
+
+.video {
+  &-main {
+    width: 100%;
+  }
+}
+
+.feature {
+  padding: 100px 0;
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    > div {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 40px 0;
+    .row {
+      margin-left: -8px;
+      margin-right: -8px;
+      > div {
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.title {
+  padding: 40px 60px;
+  background-color: #85a29f;
+  @media screen and (max-width: 991px) {
+    padding: 20px;
+  }
+}
+
+.include {
+  &-title {
+    width: 37%;
+  }
+  &-pic {
+    width: 70%;
+    margin-top: -280px;
+    margin-left: auto;
+  }
+  @media screen and (max-width: 991px) {
+    &-title {
+      width: 74%;
+    }
+    &-pic {
+      margin-top: -40px;
+    }
+  }
+}
+
+.setting {
+  &-title {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &_swiper {
+    &_item {
+      overflow: hidden;
+      position: relative;
+      height: 400px;
+      width: 100%;
+      transition: $transition;
+      .wrapper {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          width: 20px;
+          height: 20px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 5;
+        }
+        &.layer {
+          &-1 {
+            &::before {
+              background-image: url(../img/border-radius-1.svg);
+              top: 0;
+              left: 6px;
+            }
+            &::after {
+              background-image: url(../img/border-radius-2.svg);
+              top: 0;
+              right: 6px;
+            }
+          }
+          &-2 {
+            &::before {
+              background-image: url(../img/border-radius-3.svg);
+              bottom: 0;
+              left: 6px;
+            }
+            &::after {
+              background-image: url(../img/border-radius-4.svg);
+              bottom: 0;
+              right: 6px;
+            }
+          }
+        }
+      }
+      .inner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        > img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .swiper-slide {
+      .setting_swiper_item {
+        width: 100%;
+        transform: scaleX(0.5);
+        .inner {
+          transform: scaleX(2);
+        }
+        .wrapper {
+          &::before,
+          &::after {
+            transform: scaleX(1.667);
+          }
+        }
+      }
+      &.swiper-slide-prev {
+        .setting_swiper_item {
+          margin: 0;
+          margin-right: auto;
+          left: 0;
+          transform: scaleX(0.6) translateX(-25%);
+        }
+      }
+      &.swiper-slide-next {
+        .setting_swiper_item {
+          margin: 0;
+          margin-right: auto;
+          left: 0;
+          transform: scaleX(0.6) translateX(25%);
+        }
+      }
+      &-active {
+        .setting_swiper_item {
+          width: 100%;
+          transform: scaleX(1.7);
+          .inner {
+            transform: scaleX(calc(1 / 1.7)) scale(1.7);
+          }
+          .wrapper {
+            &::before,
+            &::after {
+              transform: scaleX(0.5882);
+            }
+            &::before {
+              left: -4px;
+            }
+            &::after {
+              right: -4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
+  }
+  .warm-white {
+    padding: 40px 0;
+    &_title {
+      width: 200px;
+    }
+  }
+  .flicker-flame {
+    padding: 40px 0;
+    &_title {
+      width: 200px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    &-title {
+      width: 100%;
+    }
+  &_swiper {
+    &_item {
+      border-radius: 20px;
+    }
+    .swiper-slide {
+      .setting_swiper_item {
+        transform: scaleX(1);
+        .inner {
+          transform: scaleX(1);
+        }
+        .wrapper {
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+      }
+      &.swiper-slide-prev {
+        .setting_swiper_item {
+          transform: none;
+        }
+      }
+      &.swiper-slide-next {
+        .setting_swiper_item {
+          transform: none;
+        }
+      }
+      &-active {
+        .setting_swiper_item {
+          transform: scaleX(1);
+          .inner {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  }
+}
+
+.slider-arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #85a29f;
+  transition: $transition;
+  img {
+    width: 15px;
+  }
+  &::after {
+    display: none;
+  }
+  &:hover {
+    background-color: $secondary;
+  }
+  @media screen and (max-width: 991px) {
+    width: 24px;
+    height: 24px;
+    img {
+      width: 40%;
+    }
+  }
+}
+
+.beauty {
+  &-title {
+    width: 81%;
+    margin: 0 auto;
+  }
+}

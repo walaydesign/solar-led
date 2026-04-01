@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>樹影燈</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./public/css/header.css"> -->
+    <!-- <link rel="stylesheet" href="./public/css/footer.css"> -->
+    <link rel="stylesheet" href="./public/css/layout.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header navbar-fixed-top">
+      <!-- Navbar -->
+      <nav class="navbar" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="menu-container">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".nav-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="toggle-icon"></span>
+            </button>
+            <!-- Logo -->
+            <div class="logo">
+              <a class="logo-wrap" href="index.php">
+                <img
+                  src="https://www.questwood.com/img/logo.png"
+                  alt="Logo"
+                  class="logo-img"
+                />
+                <!-- <img src="img/logo-dark.png" alt="Asentus Logo" class="logo-img logo-img-active"> -->
+              </a>
+            </div>
+            <!-- End Logo -->
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse nav-collapse">
+            <div class="menu-container">
+              <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item">
+                  <a
+                    class="nav-item-child nav-item-hover active"
+                    href="index.php"
+                    >Home</a
+                  >
+                </li>
+                <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#our-brands">OUR BRAND</a></li> -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link nav-item-child nav-item-hover dropdown-toggle"
+                    href="javascript:void(0);"
+                    id="navbarDropdownBrand"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    OUR BRAND
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a
+                      href="https://luxzone.com/"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Luxzone</a
+                    >
+                    <a
+                      href="/lac_index.php"
+                      target="_blank"
+                      class="dropdown-item"
+                      >La Coquette</a
+                    >
+                    <a
+                      href="/product-list.php?Iid=1471"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Luxor</a
+                    >
+                    <a
+                      href="/sp_products.php"
+                      target="_blank"
+                      class="dropdown-item"
+                      >Questwood</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item pc-menu">
+                  <a
+                    class="nav-item-child nav-item-hover"
+                    href="product-all.php"
+                    >OUR PRODUCTS</a
+                  >
+                </li>
+                <li class="nav-item dropdown mobile-menu">
+                  <a
+                    class="nav-link nav-item-child nav-item-hover dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    OUR PRODUCTS
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="product-list.php?Iid=887"
+                      >Solar Path Lights</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=888"
+                      >Solar Bollards</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=889"
+                      >Solar Post Light &amp; Lantern Path Lights</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=919"
+                      >Flame Effect Path Lights</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=920"
+                      >Solar Spotlights</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=921"
+                      >Solar Sensor Security Lights</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=922"
+                      >Solar Wall Coach Lights</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=923"
+                      >Solar Deck Lights</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=924"
+                      >Solar Novelty</a
+                    >
+                    <a class="dropdown-item" href="product-list.php?Iid=1471"
+                      >Luxor Electrical</a
+                    >
+                  </div>
+                </li>
+                <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="javascript:; ">Products</a> -->
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link nav-item-child nav-item-hover dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    ABOUT US
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="core-competencies.php"
+                      >Core Competencies</a
+                    >
+                    <a class="dropdown-item" href="partners.php">Partners</a>
+                    <a class="dropdown-item" href="patents.php">Patents</a>
+                    <a class="dropdown-item" href="manufactuer-sites.php"
+                      >Manufactuer Sites</a
+                    >
+                    <a class="dropdown-item" href="showroom.php">Showroom</a>
+                    <a class="dropdown-item" href="our-team.php">Our Team</a>
+                    <a class="dropdown-item" href="office-locations.php"
+                      >Office Locations</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item-child nav-item-hover" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-item-child nav-item-hover"
+                    href="https://questwood.com.au/"
+                    >Questwood Australia</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Navbar Collapse -->
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+
+    <main class="main">
+      <div class="kv">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="kv_pic">
+                <div class="swiper-container kv_swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="kv_swiper_item">
+                        <img src="./public/img/kv-1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_swiper_item">
+                        <img src="./public/img/kv-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_swiper_item">
+                        <img src="./public/img/kv-3.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_swiper_item">
+                        <img src="./public/img/kv-4.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_swiper_item">
+                        <img src="./public/img/kv-5.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_swiper_item">
+                        <img src="./public/img/kv-6.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="kv_side-wrap">
+                <div class="swiper-container kv_side">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="kv_side_item">
+                        <img src="./public/img/kv-1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_side_item">
+                        <img src="./public/img/kv-2.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_side_item">
+                        <img src="./public/img/kv-3.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_side_item">
+                        <img src="./public/img/kv-4.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_side_item">
+                        <img src="./public/img/kv-5.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="kv_side_item">
+                        <img src="./public/img/kv-6.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-arrow swiper-button-next">
+                  <img src="./public/img/arrow-right.svg" alt="" />
+                </div>
+                <div class="slider-arrow swiper-button-prev">
+                  <img src="./public/img/arrow-left.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="kv_text">
+                <img
+                  class="kv-text"
+                  src="./public/img/shadow-intro.svg"
+                  alt=""
+                />
+                <img class="kv-tag" src="./public/img/3pack.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <!-- 真正的影片 -->
+        <!-- <video class="video-main">
+            <source src="">
+        </video> -->
+
+        <!-- 現在以圖片暫時呈現 -->
+        <img class="video-main" src="./public/img/video.png" alt="" />
+      </div>
+
+      <div class="feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-6">
+              <img src="./public/img/feat-1.png" alt="" />
+            </div>
+            <div class="col-lg-4 col-6">
+              <img src="./public/img/feat-2.png" alt="" />
+            </div>
+            <div class="col-lg-4 col-6">
+              <img src="./public/img/feat-3.png" alt="" />
+            </div>
+            <div class="col-lg-4 col-6">
+              <img src="./public/img/feat-4.png" alt="" />
+            </div>
+            <div class="col-lg-4 col-6">
+              <img src="./public/img/feat-5.png" alt="" />
+            </div>
+            <div class="col-lg-4 col-6">
+              <img src="./public/img/feat-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="include">
+        <div class="title">
+          <img
+            class="include-title"
+            src="./public/img/include-title.svg"
+            alt=""
+          />
+        </div>
+        <img class="include-pic" src="./public/img/include-pic.png" alt="" />
+      </div>
+
+      <div class="setting">
+        <div class="title">
+          <img
+            class="setting-title"
+            src="./public/img/setting-title.svg"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div class="warm-white">
+            <div class="swiper-container setting_swiper warm-white_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/setting-1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/setting-2.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/setting-3.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting_bottom">
+              <div class="slider-arrow" id="warm-white-prev">
+                <img src="./public/img/arrow-left.svg" alt="" />
+              </div>
+              <img
+                class="warm-white_title"
+                src="./public/img/warm-white.svg"
+                alt=""
+              />
+              <div class="slider-arrow" id="warm-white-next">
+                <img src="./public/img/arrow-right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="flicker-flame">
+            <div class="swiper-container setting_swiper flicker-flame_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/setting-4.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/setting-5.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/setting-6.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting_bottom">
+              <div class="slider-arrow" id="flicker-flame-prev">
+                <img src="./public/img/arrow-left.svg" alt="" />
+              </div>
+              <img
+                class="flicker-flame_title"
+                src="./public/img/flicker-flame.svg"
+                alt=""
+              />
+              <div class="slider-arrow" id="flicker-flame-next">
+                <img src="./public/img/arrow-right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="beauty">
+        <div class="title">
+          <img
+            class="beauty-title"
+            src="./public/img/beauty-title.svg"
+            alt=""
+          />
+        </div>
+        <img class="w-100" src="./public/img/beauty-pic.png" alt="" />
+      </div>
+    </main>
+
+    <footer id="contact" class="footer">
+      <!-- Links -->
+      <div class="footer-seperator">
+        <div class="content-lg container">
+          <div class="row">
+            <div class="col-sm-2 sm-margin-b-50">
+              <!-- List -->
+              <ul class="list-unstyled footer-list">
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="index.php">HOME</a>
+                </li>
+                <li class="footer-list-item">
+                  <a id="our_brand" class="footer-list-link" href="javascript:;"
+                    >OUR BRAND</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a
+                    id="our_products"
+                    class="footer-list-link active"
+                    href="javascript:;"
+                    >OUR PRODUCTS</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a
+                    id="about_us"
+                    class="about_us footer-list-link"
+                    href="javascript:;"
+                    >ABOUT US</a
+                  >
+                </li>
+              </ul>
+              <!-- End List -->
+            </div>
+            <div class="col-sm-4 sm-margin-b-30">
+              <!-- List our brand-->
+              <ul class="sub_list our_brand_list list-unstyled footer-list">
+                <li class="footer-list-item">
+                  <a
+                    href="https://luxzone.com.au/"
+                    target="_blank"
+                    class="footer-list-link"
+                    >Luxzone</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a
+                    href="/lac_index.php"
+                    target="_blank"
+                    class="footer-list-link"
+                    >La Coquette</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a
+                    href="/product-list.php?Iid=1471"
+                    target="_blank"
+                    class="footer-list-link"
+                    >Luxor</a
+                  >
+                </li>
+              </ul>
+              <!-- List our product-->
+              <ul
+                class="sub_list our_products_list list-unstyled footer-list active"
+              >
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="a-guide.php"
+                    >A Guide to Solar Lighting</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=887"
+                    >Solar Path Lights</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=888"
+                    >Solar Bollards</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=889"
+                    >Solar Post Light &amp; Lantern Path Lights</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=919"
+                    >Flame Effect Path Lights</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=920"
+                    >Solar Spotlights</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=921"
+                    >Solar Sensor Security Lights</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=922"
+                    >Solar Wall Coach Lights</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=923"
+                    >Solar Deck Lights</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=924"
+                    >Solar Novelty</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="product-list.php?Iid=1471"
+                    >Luxor Electrical</a
+                  >
+                </li>
+              </ul>
+              <!-- List about us-->
+              <ul class="sub_list about_us_list list-unstyled footer-list">
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="core-competencies.php"
+                    >CORE COMPETENCIES</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="partners.php">PARTNERS</a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="patents.php">PATENTS</a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="manufactuer-sites.php"
+                    >MANUFACTURING SITES</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="showroom.php">SHOWROOM</a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="our-team.php">OUR TEAM</a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-link" href="office-locations.php"
+                    >OFFICE LOCATIONS</a
+                  >
+                </li>
+              </ul>
+              <!-- End List -->
+            </div>
+            <div class="col-sm-5 sm-margin-b-30">
+              <h2 class="color-white">Send Us A Note</h2>
+              <p>
+                For any product queries, please contact here below<br />
+                Email:&nbsp;<a href="mailto:service@luxzone.com.au"
+                  >service@luxzone.com.au</a
+                ><br />
+                For Australia: 1800 906 455 | For New Zealand: 0800 020 075
+              </p>
+            </div>
+          </div>
+          <!--// end row -->
+        </div>
+      </div>
+      <!-- End Links -->
+      <!-- Copyright -->
+      <div class="content container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img
+              src="https://www.questwood.com/img/logo.png"
+              alt="Asentus Logo"
+              width="260"
+              height="57"
+              class="footer-logo"
+            />
+          </div>
+          <div class="col-sm-6 text-right">
+            <p class="margin-b-0">
+              All Rights Reserved by:
+              <a class="color-base fweight-700" href="index.php"
+                >Questwood Group</a
+              >
+            </p>
+          </div>
+        </div>
+        <!--// end row -->
+      </div>
+      <!-- End Copyright -->
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiperSmall = new Swiper(".kv_side", {
+        slidesPerView: 3,
+        spaceBetween: 4,
+        slidesPerGroup: 3,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiperBig = new Swiper(".kv_swiper", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        thumbs: {
+          swiper: swiperSmall,
+        },
+      });
+      var swiperWarm = new Swiper(".warm-white_swiper", {
+        slidesPerView: 1,
+        spaceBetween: 12,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        slideToClickedSlide: true,
+        navigation: {
+          nextEl: "#warm-white-next",
+          prevEl: "#warm-white-prev",
+        },
+        breakpoints: {
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      var swiperWarm = new Swiper(".flicker-flame_swiper", {
+        slidesPerView: 1,
+        spaceBetween: 12,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        slideToClickedSlide: true,
+        navigation: {
+          nextEl: "#flicker-flame-next",
+          prevEl: "#flicker-flame-prev",
+        },
+        breakpoints: {
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

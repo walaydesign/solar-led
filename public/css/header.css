@@ -1,0 +1,374 @@
+/*------------------------------------------------------------------
+  	[Header]
+------------------------------------------------------------------*/
+/* Fixed Top */
+/* line 7, ../sass/layout/_header.scss */
+.navbar-fixed-top .navbar-collapse {
+  max-height: 100%;
+}
+
+/* Navbar */
+/* line 13, ../sass/layout/_header.scss */
+.header {
+  background-color: #192C4A;
+}
+/* line 15, ../sass/layout/_header.scss */
+.header .navbar {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+/* Navbar Toggle */
+/* line 24, ../sass/layout/_header.scss */
+.header .navbar-toggle {
+  width: 25px;
+  height: 25px;
+  border: none;
+  padding: 0;
+  margin: 35px 0;
+}
+/* line 30, ../sass/layout/_header.scss */
+.header .navbar-toggle .toggle-icon {
+  position: relative;
+  width: 21px;
+  height: 1px;
+  display: inline-block;
+  background: #fcfcfc;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 38, ../sass/layout/_header.scss */
+.header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
+  position: absolute;
+  left: 0;
+  background: #fcfcfc;
+  content: " ";
+}
+/* line 46, ../sass/layout/_header.scss */
+.header .navbar-toggle .toggle-icon:before {
+  width: 10px;
+  height: 1px;
+  bottom: 10px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 53, ../sass/layout/_header.scss */
+.header .navbar-toggle .toggle-icon:after {
+  width: 16px;
+  height: 1px;
+  top: -5px;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 62, ../sass/layout/_header.scss */
+.header .navbar-toggle:hover .toggle-icon {
+  background: #17bed2;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 66, ../sass/layout/_header.scss */
+.header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
+  width: 21px;
+  height: 1px;
+  background: #17bed2;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 73, ../sass/layout/_header.scss */
+.header .navbar-toggle:hover .toggle-icon.is-clicked {
+  background: rgba(81, 87, 105, 0);
+}
+
+/* Navbar Logo */
+/* line 83, ../sass/layout/_header.scss */
+.header .logo {
+  width: 115px;
+  height: 115px;
+  float: left;
+  max-height: 95px;
+  line-height: 65px;
+}
+/* line 90, ../sass/layout/_header.scss */
+.header .logo-wrap {
+  display: inline-block;
+  padding: 15px 0;
+}
+@media (min-width: 992px) {
+  /* line 90, ../sass/layout/_header.scss */
+  .header .logo-wrap {
+    padding: 10px 0;
+  }
+}
+/* line 96, ../sass/layout/_header.scss */
+.header .logo-wrap:focus, .header .logo-wrap:hover {
+  text-decoration: none;
+}
+/* line 102, ../sass/layout/_header.scss */
+.header .logo-img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+/* line 110, ../sass/layout/_header.scss */
+.header .logo-img-main {
+  display: inline-block;
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 115, ../sass/layout/_header.scss */
+.header .logo-img-active {
+  display: none;
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+/* Navbar */
+/* line 123, ../sass/layout/_header.scss */
+.header .navbar-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* Nav */
+/* line 132, ../sass/layout/_header.scss */
+.header .nav-item {
+  position: relative;
+  display: block;
+}
+/* line 137, ../sass/layout/_header.scss */
+.header .nav-item:last-child .nav-item-child {
+  padding-right: 0;
+}
+/* line 143, ../sass/layout/_header.scss */
+.header .nav-item .nav-item-hover.active:after {
+  opacity: 1;
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 151, ../sass/layout/_header.scss */
+.header .nav-item:hover .nav-item-hover:after {
+  opacity: 1;
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 159, ../sass/layout/_header.scss */
+.header .nav-item-child {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Hind, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 55px;
+  padding: 0 20px;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+/* line 170, ../sass/layout/_header.scss */
+.header .nav-item-hover {
+  position: relative;
+}
+/* line 173, ../sass/layout/_header.scss */
+.header .nav-item-hover:after {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 9px;
+  height: 2px;
+  background: #17bed2;
+  opacity: 0;
+  content: " ";
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+/* Media Queries below 991px */
+@media (max-width: 991px) {
+  /* Bootstrap collapse of navigation with a maximum width: 991px
+  (Change it to any breakpoint you want to be collapsed) */
+  /* line 191, ../sass/layout/_header.scss */
+  .header .navbar-toggle {
+    display: block;
+  }
+  /* line 196, ../sass/layout/_header.scss */
+  .header .navbar-collapse.collapse {
+    display: none !important;
+  }
+  /* line 199, ../sass/layout/_header.scss */
+  .header .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  /* line 205, ../sass/layout/_header.scss */
+  .header .nav-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 210, ../sass/layout/_header.scss */
+  .header .navbar-nav {
+    margin: 0;
+    float: none;
+  }
+  /* line 214, ../sass/layout/_header.scss */
+  .header .navbar-nav .nav-item {
+    float: none;
+  }
+  /* Menu Container */
+  /* line 7, ../sass/_mixins.scss */
+  .header .menu-container:before, .header .menu-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 13, ../sass/_mixins.scss */
+  .header .menu-container:after {
+    clear: both;
+  }
+
+  /* Logo */
+  /* line 231, ../sass/layout/_header.scss */
+  .header .logo .logo-img-main {
+    display: none;
+  }
+  /* line 235, ../sass/layout/_header.scss */
+  .header .logo .logo-img-active {
+    display: inline-block;
+  }
+
+  /* Navbar Nav */
+  /* line 244, ../sass/layout/_header.scss */
+  .header .nav-item-child {
+    color: #fff;
+    line-height: 1.4;
+    padding: 12px 12px 12px 15px;
+  }
+  /* line 252, ../sass/layout/_header.scss */
+  .header .nav-item-hover:after {
+    position: absolute;
+    top: 19px;
+  }
+  /* line 257, ../sass/layout/_header.scss */
+  .header .nav-item .dropdown-menu {
+    position: static;
+    float: none;
+    padding: 0 15px;
+    background-color: #14233B;
+    margin: 0 -15px;
+  }
+  /* line 263, ../sass/layout/_header.scss */
+  .header .nav-item .dropdown-menu a {
+    font-size: 13px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    display: block;
+    color: #fff;
+  }
+}
+
+/* Media Queries below 767px */
+@media (max-width: 767px) {
+  /* Menu Container */
+  /* line 280, ../sass/layout/_header.scss */
+  .header .menu-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 288, ../sass/layout/_header.scss */
+  .header .navbar > .container {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 295, ../sass/layout/_header.scss */
+  .header .navbar > .container > .nav-collapse {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* Media Queries above 992px */
+@media (min-width: 992px) {
+  /* Navbar */
+  /* line 310, ../sass/layout/_header.scss */
+  .header .logo {
+    width: 160px;
+    height: 160px;
+  }
+  /* line 313, ../sass/layout/_header.scss */
+  .header .navbar-nav-right {
+    float: right;
+  }
+  /* line 317, ../sass/layout/_header.scss */
+  .header .nav-item .dropdown-menu {
+    padding: 0;
+    width: 200px;
+    background-color: #14233B;
+  }
+  /* line 321, ../sass/layout/_header.scss */
+  .header .nav-item .dropdown-menu a {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    display: block;
+  }
+}
+/* Page On Scroll */
+@media (min-width: 992px) {
+  /* line 337, ../sass/layout/_header.scss */
+  .page-on-scroll .header .navbar {
+    background: #fff;
+    border-bottom-color: #f0f0f0;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  /* line 343, ../sass/layout/_header.scss */
+  .page-on-scroll .header .logo-img-main {
+    display: none;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  /* line 348, ../sass/layout/_header.scss */
+  .page-on-scroll .header .logo-img-active {
+    display: inline-block;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+  /* line 353, ../sass/layout/_header.scss */
+  .page-on-scroll .header .nav-item-child {
+    color: #515769;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  }
+}

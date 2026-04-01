@@ -1,0 +1,85 @@
+h2 {
+  font-size: 30px;
+}
+
+/*------------------------------------------------------------------
+  	[Footer]
+------------------------------------------------------------------*/
+/* line 5, ../sass/layout/_footer.scss */
+.footer {
+  background: url(https://www.questwood.com/img/1920x1080/03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 11, ../sass/layout/_footer.scss */
+.footer .footer-seperator {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 15, ../sass/layout/_footer.scss */
+.footer .footer-list {
+  margin-bottom: 0;
+}
+/* line 19, ../sass/layout/_footer.scss */
+.footer .footer-list-item {
+  color: #cbd3e1;
+  margin-bottom: 25px;
+}
+/* line 24, ../sass/layout/_footer.scss */
+.footer .footer-list-link {
+  color: #cbd3e1;
+  font-size: 16px;
+    font-weight: 500;
+    font-family: Hind, sans-serif;
+}
+/* line 27, ../sass/layout/_footer.scss */
+.footer .footer-list-link:hover {
+  color: #fff;
+}
+/* line 32, ../sass/layout/_footer.scss */
+.footer .footer-input {
+  background: rgba(0, 0, 0, 0.15);
+}
+/* line 36, ../sass/layout/_footer.scss */
+.footer .footer-logo {
+  width: 85px;
+  height: auto;
+}
+
+
+/* line 111, ../sass/layout.scss */
+.sub_list {
+  display: none;
+}
+/* line 113, ../sass/layout.scss */
+.sub_list.active {
+  display: block;
+}
+/* line 6, ../sass/utils/_colors.scss */
+.color-white {
+  color: #fff;
+}
+
+
+/* line 97, ../sass/layout.scss */
+.footer-list-link.active {
+  position: relative;
+}
+/* line 99, ../sass/layout.scss */
+.footer-list-link.active:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  width: 9px;
+  height: 2px;
+  background: #17bed2;
+}
+
+.content-lg {
+  padding-top: 55px;
+}
+
+.content-lg {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
