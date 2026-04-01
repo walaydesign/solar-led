@@ -299,7 +299,7 @@
             </div>
           </div>
         </div>
-                <img class="kv-tag" src="./public/img/4pack.svg" alt="" />
+        <img class="kv-tag" src="./public/img/4pack.svg" alt="" />
       </div>
 
       <div class="video">
@@ -346,13 +346,116 @@
           />
         </div>
         <div class="shatter_content">
-        <img class="shatter-sgs" src="./public/img/shatter-sgs.png" alt="">
-
+          <img class="shatter-sgs" src="./public/img/shatter-sgs.png" alt="" />
         </div>
-        <img class="shatter-product" src="./public/img/shatter-product.png" alt="">
+        <img
+          class="shatter-product"
+          src="./public/img/shatter-product.png"
+          alt=""
+        />
       </div>
 
-      
+      <div class="setting">
+        <div class="title">
+          <img class="warm-title" src="./public/img/warm-title.svg" alt="" />
+        </div>
+        <div class="color-wrap">
+          <div class="color">
+            <div class="swiper-container setting_swiper color_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/color-red.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/color-orange.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/color-green.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/color-blue.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/color-indigo.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/color-purple.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="setting_swiper_item">
+                    <div class="wrapper layer-1">
+                      <div class="wrapper layer-2">
+                        <div class="inner">
+                          <img src="./public/img/color-warmwhite.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="color-btns">
+              <button><img src="./public/img/btn-red.svg" alt="" /></button>
+              <button><img src="./public/img/btn-orange.svg" alt="" /></button>
+              <button class="active"><img src="./public/img/btn-green.svg" alt="" /></button>
+              <button><img src="./public/img/btn-blue.svg" alt="" /></button>
+              <button><img src="./public/img/btn-indigo.svg" alt="" /></button>
+              <button><img src="./public/img/btn-purple.svg" alt="" /></button>
+              <button>
+                <img src="./public/img/btn-warmwhite.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="beautify">
         <div class="title">
@@ -363,7 +466,7 @@
           />
         </div>
         <img class="w-100" src="./public/img/beauty-pic-1.png" alt="" />
-        <hr>
+        <hr />
         <img class="w-100" src="./public/img/beauty-pic-2.png" alt="" />
       </div>
     </main>
@@ -584,12 +687,13 @@
           swiper: swiperSmall,
         },
       });
-      var swiperWarm = new Swiper(".warm-white_swiper", {
+      var swiperWarm = new Swiper(".color_swiper", {
         slidesPerView: 1,
         spaceBetween: 12,
         slidesPerGroup: 1,
         centeredSlides: true,
-        loop: true,
+        initialSlide: 2,
+        // loop: true,
         observer: true,
         observeParents: true,
         slideToClickedSlide: true,
@@ -599,28 +703,15 @@
         },
         breakpoints: {
           992: {
-            slidesPerView: 3,
+            slidesPerView: 5,
           },
         },
       });
-      var swiperWarm = new Swiper(".flicker-flame_swiper", {
-        slidesPerView: 1,
-        spaceBetween: 12,
-        slidesPerGroup: 1,
-        centeredSlides: true,
-        loop: true,
-        observer: true,
-        observeParents: true,
-        slideToClickedSlide: true,
-        navigation: {
-          nextEl: "#flicker-flame-next",
-          prevEl: "#flicker-flame-prev",
-        },
-        breakpoints: {
-          992: {
-            slidesPerView: 3,
-          },
-        },
+
+      $(".color-btns button").click(function() {
+        $(this).addClass("active").siblings("button").removeClass("active");
+        let index = $(this).index();
+        swiperWarm.slideTo(index, 1000, true);
       });
     </script>
   </body>
